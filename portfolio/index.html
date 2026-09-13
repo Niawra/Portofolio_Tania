@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tania Nurilia Adinda — Aspiring Software Engineer interested in building, learning, and experimenting with technology.</title>
+  <meta name="description" content="Portofolio pribadi Tania Nurilia Adinda, pelajar teknologi dan calon Software Engineer yang tertarik pada pemrograman, pengembangan web, UI/UX, fotografi, dan videografi.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tania Nurilia Adinda — Aspiring Software Engineer interested in building, learning, and experimenting with technology.">
+  <meta property="og:description" content="Portofolio pribadi Tania Nurilia Adinda, pelajar teknologi dan calon Software Engineer yang tertarik pada pemrograman, pengembangan web, UI/UX, fotografi, dan videografi.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <!-- Fonts: Fraunces (display serif), Inter (body/UI), JetBrains Mono (labels & metadata) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    ☀️
+</button>
+</head>
+<body>
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGASI ===== -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="#home" class="nav__logo">TANIA<span class="accent-dot">.</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link" data-nav="home">Beranda</a></li>
+        <li><a href="#about" class="nav__link" data-nav="about">Tentang</a></li>
+        <li><a href="#skills" class="nav__link" data-nav="skills">Keahlian</a></li>
+        <li><a href="#work" class="nav__link" data-nav="work">Karya</a></li>
+        <li><a href="#experience" class="nav__link" data-nav="experience">Pengalaman</a></li>
+        <li><a href="#services" class="nav__link" data-nav="services">Layanan</a></li>
+        <li><a href="#achievements" class="nav__link" data-nav="achievements">Pencapaian</a></li>
+        <li><a href="#contact" class="nav__link" data-nav="contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero__inner">
+        <div class="hero__content" data-reveal>
+
+          <h1 class="hero__headline">Building ideas into something real.</h1>
+          <p class="hero__sub">Calon Software Engineer yang memadukan teknologi, kreativitas.</p>
+
+          <div class="hero__cta">
+            <a href="#work" class="btn btn--primary">Lihat Karya Saya</a>
+            <a href="#contact" class="btn btn--ghost">Mari Terhubung</a>
+          </div>
+
+          <p class="hero__note">Saat ini sedang belajar, membangun, bereksperimen, dan berkembang.</p>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <div class="frame">
+            <!-- Ganti gambar ini dengan potret dirimu sendiri -->
+            <img src="assets/images/profile.jpg" alt="Potret Tania Nurilia Adinda" class="frame__img" onerror="this.parentElement.classList.add('frame--empty')">
+            <span class="frame__tick frame__tick--tl" aria-hidden="true"></span>
+            <span class="frame__tick frame__tick--br" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Gulir ke bagian Tentang">
+        <span class="scroll-indicator__line"></span>
+        <span class="scroll-indicator__label">Gulir</span>
+      </a>
+    </section>
+
+    <!-- ===== TENTANG ===== -->
+    <section class="about" id="about">
+      <div class="section-inner">
+
+        <h2 class="section-title" data-reveal>Sedikit tentang saya.</h2>
+
+        <div class="about__grid">
+          <div class="about__text" data-reveal>
+            <p>
+              Saya seorang pelajar teknologi yang punya rasa ingin tahu tinggi tentang cara kerja sesuatu,
+              mulai dari logika yang menjalankan sebuah halaman web hingga basis data yang diam-diam menyatukan semuanya.
+              Sebagian besar waktu saya dihabiskan untuk mengubah ide menjadi proyek digital kecil: situs web, antarmuka,
+              dan sesekali diagram basis data yang entah kenapa terasa memuaskan saat berhasil diurai.
+            </p>
+            <p>
+              Di luar coding, saya banyak menghabiskan waktu di balik kamera. Fotografi dan videografi memberi saya
+              jenis masalah yang berbeda untuk dipecahkan, soal cahaya, framing, dan timing, bukan sintaks.
+              Saya suka bahwa keduanya saling melengkapi: kepekaan desain dari karya visual muncul dalam antarmuka
+              yang saya buat, dan kesabaran yang saya bangun lewat coding muncul dalam cara saya menyunting.
+            </p>
+            <p>
+              Dalam jangka panjang, saya sedang berusaha menjadi <strong>Software Engineer</strong> — bukan hanya
+              menulis kode, tapi membangun sesuatu yang matang secara konsep, mudah digunakan, dan sedikit indah.
+            </p>
+          </div>
+
+          <aside class="about__panel" data-reveal>
+            <dl class="info-panel">
+              <div class="info-panel__row">
+                <dt>Peran</dt>
+                <dd>Pelajar Teknologi</dd>
+              </div>
+              <div class="info-panel__row">
+                <dt>Fokus</dt>
+                <dd>Software Engineering</dd>
+              </div>
+              <div class="info-panel__row">
+                <dt>Minat</dt>
+                <dd>Teknologi + Media Kreatif</dd>
+              </div>
+              <div class="info-panel__row">
+                <dt>Berdomisili di</dt>
+                <dd>Indonesia</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+
+    </section>
+
+    <!-- ===== KEAHLIAN ===== -->
+    <section class="skills" id="skills">
+      <div class="section-inner">
+
+        <h2 class="section-title" data-reveal>Yang saya kuasai.</h2>
+
+        <div class="skills__grid">
+          <div class="skill-category" data-reveal>
+            <h3 class="skill-category__title">Teknis</h3>
+            <div class="tag-cloud">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">C#</span>
+              <span class="tag">ERD</span>
+              <span class="tag">UI/UX</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-reveal>
+            <h3 class="skill-category__title">Kreatif</h3>
+            <div class="tag-cloud">
+              <span class="tag">Fotografi</span>
+              <span class="tag">Videografi</span>
+
+            </div>
+          </div>
+
+          <div class="skill-category" data-reveal>
+            <h3 class="skill-category__title">Personal</h3>
+            <div class="tag-cloud">
+              <span class="tag">Pemecahan Masalah</span>
+              <span class="tag">Berpikir Kreatif</span>
+              <span class="tag">Teliti terhadap Detail</span>
+              <span class="tag">Belajar Mandiri</span>
+              <span class="tag">Pengambilan Keputusan</span>
+              <span class="tag">Adaptabilitas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KARYA / PORTOFOLIO ===== -->
+    <section class="work" id="work">
+      <div class="section-inner">
+        <h2 class="section-title" data-reveal>Hal-hal yang telah saya bangun & ciptakan.</h2>
+
+        <div class="work__grid">
+
+          <article class="project-card project-card--wide" data-reveal>
+            <div class="project-card__media">
+              <img src="assets/images/matchawave.png" alt="Pratinjau proyek MatchaWave" loading="lazy" onerror="this.parentElement.classList.add('media--empty')">
+
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__category">Pengembangan Web</span>
+              <h3 class="project-card__title">MatchaWave</h3>
+              <p class="project-card__desc">Proyek pengembangan web yang memadukan desain antarmuka, pengembangan frontend, dan fungsionalitas basis data.</p>
+              <div class="tag-cloud tag-cloud--sm">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <a href="#" class="project-card__link">Lihat Proyek →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__media">
+              <img src="assets/images/uiux.png" alt="Pratinjau proyek desain UI/UX" loading="lazy" onerror="this.parentElement.classList.add('media--empty')">
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__category">Desain UI/UX</span>
+              <h3 class="project-card__title">Proyek UI/UX</h3>
+              <p class="project-card__desc">Konsep antarmuka yang dirancang dengan fokus pada kegunaan, hierarki visual, dan pengalaman pengguna.</p>
+              <div class="tag-cloud tag-cloud--sm">
+                <span class="tag">Figma</span>
+              </div>
+              <a href="#" class="project-card__link">Lihat Proyek →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__media">
+              <img src="assets/images/photography.jpg" alt="Pratinjau koleksi fotografi" loading="lazy" onerror="this.parentElement.classList.add('media--empty')">
+
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__category">Kreatif / Fotografi</span>
+              <h3 class="project-card__title">Fotografi</h3>
+              <p class="project-card__desc">Kumpulan karya visual yang berfokus pada suasana, komposisi, dan penceritaan.</p>
+              <a href="https://drive.google.com/drive/folders/1Ub6uRcJIH2C8-C3wtWit1dzNEXP7ponn?usp=sharing" class="project-card__link">Lihat Proyek →</a>
+            </div>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PENGALAMAN ===== -->
+    <section class="experience" id="experience">
+      <div class="section-inner">
+        <p class="eyebrow" data-reveal> pengalaman</p>
+        <h2 class="section-title" data-reveal>Ke mana waktu saya habiskan.</h2>
+
+        <div class="timeline">
+          <div class="timeline__item" data-reveal>
+            <span class="timeline__date"><!-- ubah tahun --> 2025 — Sekarang</span>
+            <div class="timeline__content">
+              <h3>Proyek Teknologi</h3>
+              <p>Proyek teknologi sekolah dan pribadi — membangun situs web, aplikasi kecil, dan skema basis data dari awal.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item" data-reveal>
+            <span class="timeline__date"><!-- ubah tahun --> 2021 — Sekarang</span>
+            <div class="timeline__content">
+              <h3>Proyek Kreatif</h3>
+              <p>Proyek fotografi, videografi, dan visual storytelling, baik pribadi maupun tugas sekolah.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LAYANAN ===== -->
+    <section class="services" id="services">
+      <div class="section-inner">
+        <p class="eyebrow" data-reveal> layanan</p>
+        <h2 class="section-title" data-reveal>Yang bisa saya bantu ciptakan.</h2>
+
+        <div class="services__grid">
+          <div class="service-card" data-reveal>
+            <span class="service-card__icon" aria-hidden="true">◧</span>
+            <h3>Pengembangan Web</h3>
+            <p>Situs web yang bersih dan fungsional, dibangun dengan teknologi frontend modern.</p>
+          </div>
+          <div class="service-card" data-reveal>
+            <span class="service-card__icon" aria-hidden="true">◨</span>
+            <h3>Desain UI/UX</h3>
+            <p>Antarmuka yang dirancang dengan memperhatikan kegunaan, kejelasan, dan konsistensi visual.</p>
+          </div>
+          <div class="service-card" data-reveal>
+            <span class="service-card__icon" aria-hidden="true">◎</span>
+            <h3>Fotografi</h3>
+            <p>Konten visual yang berfokus pada komposisi, suasana, dan penceritaan.</p>
+          </div>
+          <div class="service-card" data-reveal>
+            <span class="service-card__icon" aria-hidden="true">▷</span>
+            <h3>Videografi</h3>
+            <p>Konten visual sinematik yang menarik.</p>
+          </div>
+          <div class="service-card" data-reveal>
+            <span class="service-card__icon" aria-hidden="true">✦</span>
+            <h3>Proyek Digital Kreatif</h3>
+            <p>Memadukan teknologi dan kreativitas untuk mengubah ide menjadi pengalaman digital.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PENCAPAIAN ===== -->
+    <section class="achievements" id="achievements">
+      <div class="section-inner">
+        <p class="eyebrow" data-reveal> pencapaian</p>
+        <h2 class="section-title" data-reveal>Hal-hal yang saya banggakan.</h2>
+
+        <!-- Kartu pencapaian — isi dengan foto sertifikat / proyek -->
+        <div class="achievements__grid">
+
+          <article class="achievement-card" data-reveal>
+            <div class="achievement-card__media">
+              <img src="assets/images/elevalte.jpg" alt="Sertifikat pengembangan web" loading="lazy" onerror="this.parentElement.classList.add('media--empty')">
+            </div>
+            <div class="achievement-card__body">
+              <span class="achievement-card__category">Sertifikat</span>
+              <h3 class="achievement-card__title">Azure AI Fundamentals</h3>
+              <p class="achievement-card__desc">Sertifikat penyelesaian Preparation Course for Azure AI Fundamentals (AI-900) dari Microsoft.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card" data-reveal>
+            <div class="achievement-card__media">
+              <img src="assets/images/dicoding.jpg" alt="Sertifikat kompetisi teknologi" loading="lazy" onerror="this.parentElement.classList.add('media--empty')">
+            </div>
+            <div class="achievement-card__body">
+              <span class="achievement-card__category">Sertifikat</span>
+              <h3 class="achievement-card__title">Belajar Dasar AI</h3>
+              <p class="achievement-card__desc">Sertifikat penyelesaian kelas Belajar Dasar AI dari Dicoding Indonesia.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card" data-reveal>
+            <div class="achievement-card__media">
+              <img src="assets/images/csse.jpg" alt="Sertifikat UI/UX dan media kreatif" loading="lazy" onerror="this.parentElement.classList.add('media--empty')">
+            </div>
+            <div class="achievement-card__body">
+              <span class="achievement-card__category">Sertifikat</span>
+              <h3 class="achievement-card__title">Intro to Software Engineering</h3>
+              <p class="achievement-card__desc">Sertifikat keikutsertaan dalam Coding Camp Intro to Software Engineering dari RevoU.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== KONTAK ===== -->
+    <section class="contact" id="contact">
+      <div class="section-inner">
+        <p class="eyebrow" data-reveal> kontak</p>
+        <h2 class="section-title section-title--contact" data-reveal>Mari ciptakan sesuatu yang berarti.</h2>
+        <p class="contact__sub" data-reveal>Punya ide, proyek, atau ingin berkolaborasi? Mari terhubung.</p>
+
+        <div class="contact__grid">
+          <div class="contact__links" data-reveal>
+            <a href="mailto:tanianuriliaa@gmail.com" class="contact__link">
+              <span class="contact__link-label">Email</span>
+              <span class="contact__link-value">tanianuriliaa@gmail.com</span>
+            </a>
+            <a href="https://www.instagram.com/achivnia_" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <span class="contact__link-label">Instagram</span>
+              <span class="contact__link-value">@achivnia_</span>
+            </a>
+            <a href="https://github.com/niawra" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <span class="contact__link-label">GitHub</span>
+              <span class="contact__link-value">github.com/niawra</span>
+            </a>
+            <a href="https://www.linkedin.com/in/tania-nurilia-adinda" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <span class="contact__link-label">LinkedIn</span>
+              <span class="contact__link-value">linkedin.com/in/tania-nurilia-adinda</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="site-footer__logo">TANIA<span class="accent-dot">.</span></span>
+        <p>Dibangun dengan rasa ingin tahu & kode.</p>
+      </div>
+
+      <div class="site-footer__links">
+        <a href="mailto:hello@example.com">Email</a>
+        <a href="#">Instagram</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <p class="site-footer__copy">© 2026 Tania Nurilia Adinda.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
